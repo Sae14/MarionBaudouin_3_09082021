@@ -1,0 +1,11 @@
+{
+  "name": "marionbaudouin_3_09082021",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}
