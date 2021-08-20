@@ -1,0 +1,29 @@
+.search{
+    background-color: rgb(236, 232, 232);
+    padding: 10px 0px 10px 50px;
+    text-align: center;
+    border-top: outset 2px rgba(209, 204, 204, 0.884);
+    input{
+        background-color: rgb(236, 232, 232);
+        border: none;
+        padding: 5px 0px 5px 5px;
+        margin-left: 5px;
+    }
+}
+
+.presentation{
+    background-color: $color-background;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    text-align: center;
+    h1{
+        font-size: 23px;
+        padding-left: 70px;
+        padding-right: 70px;
+        +p{
+            padding-left: 25px;
+            padding-right: 25px;
+            color: $color-lighten-text;
+        }
+    }
+}

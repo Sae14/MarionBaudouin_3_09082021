@@ -1,0 +1,90 @@
+/*header{
+    position: relative;
+}*/
+
+/*.restaurant-img{*/
+    .restaurant-img{
+        height: 320px;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        top: 50px;
+        /*position: relative;*/
+        /*object-position: initial;*/
+    }
+/*}*/
+
+.restaurant{
+    background-color: $color-background;
+    z-index: 0;
+    /*position: relative;*/
+    /*top: -55px;*/
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 15px 10px 50px 10px;
+    &__name{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        h1{
+            font-family: $font-secondary;
+            font-size: 27px;
+            font-weight: normal;
+            padding-left: 5px;
+        }
+    }
+}
+
+.restaurant__heart{
+    padding-right: 35px;
+}
+
+.restaurant__menu-part{
+    padding-bottom: 30px;
+    h2{
+        font-size: 18px;
+        color: $color-lighten-text;
+        font-weight: normal;
+        margin-bottom: 2px;
+    }
+
+        .restaurant__dish{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            box-shadow: 0px 3px 8px 2px rgb(226, 220, 220);
+            border-radius: 15px;
+            margin-bottom: 15px;
+            padding: 0px 20px 0px 10px;
+            h3{
+                margin-top: 10px;
+                margin-bottom: 0px;
+                font-size: 19px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                +p{
+                    margin-top: 3px;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }    
+    }
+}
+
+.restaurant__price{
+    p{
+    margin-bottom: 0;
+    line-height: 50px;
+    }
+}
+
+.restaurant__dish-desc{
+    width: 295px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

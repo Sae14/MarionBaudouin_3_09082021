@@ -1,0 +1,47 @@
+.restaurants-container{
+    background-color: $color-background;
+    padding: 20px 15px 40px 15px;
+    img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 190px;
+    }
+}
+
+.restaurant-card__img{
+    position: relative;
+    &--new{
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        background-color: rgb(117, 216, 170);
+        padding: 7px 10px 7px 10px;
+        color:rgb(32, 131, 65);
+        border-radius: 3px;
+    }
+}
+
+.restaurant-card{
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px 2px rgb(226, 220, 220);   
+    &__desc{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 0px 0px 15px;
+        h3{
+            margin-bottom: 0;
+            margin-top: 10px;
+            +p{
+                margin-top: 3px;
+                }
+            }
+        }  
+}
+
+.restaurant-card__heart{
+    padding: 15px 25px 0px 0px;
+}
+

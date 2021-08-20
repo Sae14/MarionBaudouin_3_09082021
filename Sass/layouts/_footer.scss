@@ -1,0 +1,28 @@
+.footer-container{
+    background-color: $color-footer-background;
+    color: white;
+    padding: 2px 0px 7px 15px;
+    &__menu{
+        padding-left: 0;
+        li{
+            list-style: none;
+            padding-bottom: 7px;
+            >a{
+                color: white;
+            }
+        }
+    }
+}
+
+.footer-container__title{
+    font-family: $font-secondary;
+    font-weight: normal;
+}
+.footer-container__icon-design{
+    margin-right: 20px;
+    display: inline-block;
+    width: 1px;
+    .footer-container__icon{
+        font-size: 11px;
+    }
+}

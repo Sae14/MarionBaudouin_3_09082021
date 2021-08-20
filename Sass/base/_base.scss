@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    font-family: $font-primary, sans-serif;
+}
+
+.title-decoration{
+    width: 45px;
+    height: 20px;
+    border-top: solid 3px $color-tertiary;
+}
