@@ -33,13 +33,12 @@
             padding-left: 5px;
         }
     }
+    &__heart{
+        padding-right: 35px;
+    }
 }
 
-.restaurant__heart{
-    padding-right: 35px;
-}
-
-.restaurant__menu-part{
+.menu{
     padding-bottom: 30px;
     h2{
         font-size: 18px;
@@ -47,44 +46,39 @@
         font-weight: normal;
         margin-bottom: 2px;
     }
-
-        .restaurant__dish{
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            box-shadow: 0px 3px 8px 2px rgb(226, 220, 220);
-            border-radius: 15px;
-            margin-bottom: 15px;
-            padding: 0px 20px 0px 10px;
-            h3{
-                margin-top: 10px;
-                margin-bottom: 0px;
-                font-size: 19px;
+    &__dish{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 0px 3px 8px 2px rgb(226, 220, 220);
+        border-radius: 15px;
+        margin-bottom: 15px;
+        padding: 0px 20px 0px 10px;
+    }
+    &__dish-desc{
+        width: 295px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        h3{
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 19px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            +p{
+                margin-top: 3px;
+                margin-bottom: 5px;
+                font-size: 16px;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
-                +p{
-                    margin-top: 3px;
-                    margin-bottom: 5px;
-                    font-size: 16px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                }
-            }    
+            }
+        }    
     }
-}
-
-.restaurant__price{
-    p{
-    margin-bottom: 0;
-    line-height: 50px;
+    &__price{
+        margin-bottom: 0;
+        line-height: 50px;
     }
-}
-
-.restaurant__dish-desc{
-    width: 295px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
 }

@@ -1,16 +1,13 @@
-button{
-    background: linear-gradient($color-secondary, $color-primary);
-    color: $color-darken-text;
-    padding: 15px 15px 15px 15px;
-    border: none;
-    border-radius: 23px;
-    /*margin: 10px 70px 0px 70px;*/
-    box-shadow: 0px 3px 5px 3px rgb(226, 220, 220);
-    width: 190px;
-    /*object-position: center;*/
-}
-
 .btn-position{
     display: flex;
     justify-content: center;
+    button{
+        background: linear-gradient($color-secondary, $color-primary);
+        color: $color-darken-text;
+        padding: 15px 15px 15px 15px;
+        border: none;
+        border-radius: 23px;
+        box-shadow: 0px 3px 5px 3px rgb(226, 220, 220);
+        width: 190px;
+    }
 }

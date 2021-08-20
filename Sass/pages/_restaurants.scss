@@ -1,32 +1,30 @@
 .restaurants-container{
     background-color: $color-background;
     padding: 20px 15px 40px 15px;
-    img{
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-        height: 190px;
-    }
-}
-
-.restaurant-card__img{
-    position: relative;
-    &--new{
-        position: absolute;
-        right: 12px;
-        top: 12px;
-        background-color: rgb(153, 226, 208);
-        padding: 7px 10px 7px 10px;
-        color:rgb(115, 203, 182);
-        border-radius: 3px;
-    }
-}
-
-.restaurant-card{
-    overflow: hidden;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 3px 8px 2px rgb(226, 220, 220);   
+    .restaurant-card{
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 3px 8px 2px rgb(226, 220, 220);  
+        background-color: white;
+        &__img{
+            position: relative;
+            img{
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 190px;
+            }
+        &--new{
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            background-color: rgb(153, 226, 208);
+            padding: 7px 10px 7px 10px;
+            color:rgb(43, 163, 135);
+            border-radius: 3px;
+        }
+        }
     &__desc{
         display: flex;
         justify-content: space-between;
@@ -36,12 +34,11 @@
             margin-top: 10px;
             +p{
                 margin-top: 3px;
-                }
             }
-        }  
+        }
+    }
+    &__heart{
+        padding: 15px 25px 0px 0px;
+    }
+    }
 }
-
-.restaurant-card__heart{
-    padding: 15px 25px 0px 0px;
-}
-
