@@ -1,3 +1,44 @@
+/* Animations */
+
+@keyframes menu-appear {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-check {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.restaurant{
+    &__part1{
+        animation: menu-appear ease-in-out 1500ms both;
+    }
+
+    &__part2{
+        animation: menu-appear ease-in-out 1500ms 1s both;
+    }
+
+    &__part3{
+        animation: menu-appear ease-in-out 1500ms 2s both;
+    }
+}
+
+
+
 .restaurant-img{
     img{
     width: 100vw;
@@ -6,6 +47,10 @@
     object-position: center;
     }
 }
+
+/*.testprice{
+    transition: transform 1000ms;
+}*/
 
 
 .restaurant{
@@ -27,7 +72,7 @@
         }
     }
     &__heart{
-        padding-right: 35px;
+        margin-right: 35px;
     }
 }
 
@@ -40,16 +85,36 @@
         margin-bottom: 2px;
     }
     &__dish{
+        overflow: hidden;
         display: flex;
         justify-content: space-between;
+        /*flex-wrap: wrap;*/
         background-color: white;
         @include block-shadow;
         border-radius: 15px;
         margin-bottom: 15px;
-        padding: 0px 15px 0px 10px;
+        padding: 0px 0px 0px 10px;
+        &:hover{
+            .menu__check{
+                margin-right: 0px;
+                /*display: flex;*/
+                /*display: block;*/
+                /*z-index: 0;*/
+                /*flex-grow: -1;*/
+                /*transform-origin: right;*/
+                /*transform: translateX(-60px);*/
+                i {
+                    transform: rotate(360deg);
+                    animation: slide-check 750ms forwards;
+                }
+            }
+        }
     }
     &__dish-desc{
         width: 290px;
+        display: flex;
+        flex-direction: column;
+        /*height: 60px;*/
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -72,6 +137,34 @@
     }
     &__price{
         margin-bottom: 0;
-        line-height: 50px;
+        line-height: 60px;
+        padding-right: 5px;
+    }
+    &__check{
+        background-color: $color-tertiary;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 60px;
+        /*position: relative;*/
+        /*display: none;*/
+        /*display: block;*/
+        display: flex;
+        justify-content: center;
+        /*flex-direction: reverse;*/
+        align-items: center;
+        /*transform-origin: right;*/
+        /*transition: transform 1000ms;*/
+        transition: 500ms ease-out 150ms;
+        margin-right: -60px;
+        i{
+            /*position: absolute;
+            top: 30px;
+            left: 15px;*/
+            background-color: white;
+            padding: 5px 4px 3px 4px;
+            border-radius: 16px;
+            color: $color-tertiary;
+            font-size: 12px;
+        }
     }
 }

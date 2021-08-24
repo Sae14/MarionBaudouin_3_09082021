@@ -9,5 +9,27 @@
         border-radius: 23px;
         box-shadow: 0px 3px 5px 3px rgb(226, 220, 220);
         width: 195px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+        }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 23px;
+        background: linear-gradient(lighten($color-secondary, 5), lighten($color-primary, 10));
+        box-shadow: 0px 8px 7px 1px rgb(226, 220, 220);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 300ms;
+    }
     }
 }

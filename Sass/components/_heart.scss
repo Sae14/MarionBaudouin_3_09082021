@@ -1,7 +1,88 @@
+
 .heart{
     font-size: 27px;
-    color: grey;
+    /*background-color: $color-background;*/
+    /*color: transparent;*/
+    /*font-weight: 300;*/
+    position: relative;
+    z-index: 1;
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    .fa-heart::before{
+        content: "";
+        font-size: 30px;
+    }
+    &::after{
+        content: "\f004";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: transparent;
+        background-image: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 700ms ease-in-out;
+    }
 }
+/*.fa-heart::before{
+    content: "\f004";
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+}*/
 
+
+
+
+    /*.heart:hover{
+        .fullhearth{
+            opacity: 1;
+        }
+    }
+    .emptyhearth{
+        /*content: "\f004";*/
+       /* color: grey;
+    }
+    /*.fullhearth{
+        /*content: "";*/
+        /*position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /*color: transparent;*/
+        /*background-image: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 700ms ease-in-out;
+    }*/
+
+
+/*.heart {
+    color: #FFF;
+    border-radius: 50%;
+}
+.heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.heart:hover::before{
+    color: red;
+    cursor: pointer;
+}*/
 
 
