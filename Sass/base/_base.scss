@@ -7,3 +7,69 @@ body{
         border-top: solid 3px $color-tertiary;
     }
 }
+
+.spinner {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  visibility: hidden;
+  background-color: white;
+  animation: background-loader 4300ms both ease-out;
+  & div {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: linear-gradient($color-secondary, $color-primary);
+    animation: sk-bouncedelay 1.4s;
+    animation-iteration-count: 3;
+    visibility: hidden;
+  }
+  & .bounce1 {
+    animation-delay: -0.32s;
+  }
+  & .bounce2 {
+    animation-delay: -0.16s;
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0% {
+    transform: scale(0);
+    visibility: visible;
+  }
+
+  40% {
+    transform: scale(1);
+    visibility: visible;
+  }
+
+  80% {
+    transform: scale(0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: scale(0);
+    visibility: visible;
+  }
+}
+
+@keyframes background-loader {
+    0% {
+        opacity: 0.8;
+        visibility: visible
+    }
+    80% {
+        opacity: 0.8;
+        visibility: visible
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

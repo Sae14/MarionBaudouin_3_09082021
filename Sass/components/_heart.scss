@@ -1,22 +1,130 @@
+/*.heart-container{
+    width: 30px;
+    height: 30px;
+}
 
+.empty {
+    color: grey;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+*/
+
+
+/*.heart {
+    font-size: 27px;
+}
+
+.emptyhearth{
+    color: grey;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+}
+ 
+    .emptyhearth:hover{
+        .fullhearth{
+            opacity: 1;
+        }
+        }
+    
+
+    .fullhearth{
+        position: absolute;
+        font-weight: 800;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient($color-secondary, $color-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 700ms ease-in-out;
+    }
+*/
+
+
+        /*.heart {
+        color: #FFF;
+        border-radius: 50%;
+    }
+    .heart::before {
+        content: "\f004";
+        font-weight: bold;
+        transition: color 1s ease-out;
+    }
+    .heart:hover::before{
+        color: red; }
+*/
+    
 .heart{
     font-size: 27px;
     /*background-color: $color-background;*/
-    /*color: transparent;*/
-    /*font-weight: 300;*/
+    color: transparent;
+    font-weight: 300;
     position: relative;
     z-index: 1;
+
     &:hover{
         &::after{
             opacity: 1;
         }
     }
-    .fa-heart::before{
-        content: "";
+    /*.heart-container::before{
+        content: "\f004";
         font-size: 30px;
-    }
+        font-weight: 400;
+        color: grey;
+    }*/
     &::after{
         content: "\f004";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /*color: transparent;*/
+        background: linear-gradient($color-secondary, $color-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 700ms ease-in-out;
+    }
+}
+
+/*.heart-container::before{
+    content: "\f004";
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+}*/
+   
+
+
+
+
+
+
+  /*  .heart:hover{
+        .fullhearth{
+            opacity: 1;
+        }
+    }
+    .emptyhearth{
+        content: "\f004";
+        color: grey;
+    }
+    .fullhearth{
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -29,60 +137,4 @@
         opacity: 0;
         z-index: -1;
         transition: opacity 700ms ease-in-out;
-    }
-}
-/*.fa-heart::before{
-    content: "\f004";
-    position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 1;
-        z-index: 1;
-}*/
-
-
-
-
-    /*.heart:hover{
-        .fullhearth{
-            opacity: 1;
-        }
-    }
-    .emptyhearth{
-        /*content: "\f004";*/
-       /* color: grey;
-    }
-    /*.fullhearth{
-        /*content: "";*/
-        /*position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        /*color: transparent;*/
-        /*background-image: linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 700ms ease-in-out;
     }*/
-
-
-/*.heart {
-    color: #FFF;
-    border-radius: 50%;
-}
-.heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
-.heart:hover::before{
-    color: red;
-    cursor: pointer;
-}*/
-
-
