@@ -25,6 +25,9 @@
 
 .restaurant{
     &__part1{
+        @include tablet{
+            margin-right: 10px;
+        }
         animation: menu-appear ease-in-out 1500ms both;
     }
 
@@ -48,11 +51,6 @@
     }
 }
 
-/*.testprice{
-    transition: transform 1000ms;
-}*/
-
-
 .restaurant{
     background-color: $color-background;
     position: relative;
@@ -60,10 +58,20 @@
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     padding: 15px 10px 50px 10px;
+    @include desktop{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     &__name{
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        @include tablet{
+            justify-content: center;
+        }
+        @include desktop{
+            justify-content: center;
+        }
         h1{
             font-family: $font-secondary;
             font-size: 27px;
@@ -76,13 +84,34 @@
     }
 }
 
+.restaurant-part-container{
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .menu{
     padding-bottom: 30px;
+    @include tablet{
+        padding-bottom: 15px;
+    }
     h2{
         font-size: 18px;
         color: $color-lighten-text;
         font-weight: normal;
         margin-bottom: 2px;
+        @include tablet{
+            text-align: center;
+        }
+        @include desktop{
+            text-align: center;
+        }
     }
     &__dish{
         overflow: hidden;
@@ -118,6 +147,9 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        @include desktop{
+            width: 370px;
+        }
         h3{
             margin-top: 10px;
             margin-bottom: 0px;

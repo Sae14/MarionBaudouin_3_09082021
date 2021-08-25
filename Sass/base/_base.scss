@@ -5,6 +5,13 @@ body{
         width: 45px;
         height: 20px;
         border-top: solid 3px $color-tertiary;
+        @include tablet{
+          width: 100%;
+        }
+        @include desktop{
+          width: 100%;
+          border-top-width: 2px;
+        }
     }
 }
 

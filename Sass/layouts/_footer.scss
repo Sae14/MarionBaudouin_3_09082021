@@ -2,12 +2,36 @@
     background-color: $color-footer-background;
     color: white;
     padding: 2px 0px 7px 15px;
-    &__title{
+    @include tablet{
+        padding-left: 0px;
+    }
+    @include desktop{
+        padding-left: 0px;
+    }
+        &__title{
         font-family: $font-secondary;
         font-weight: normal;
+        @include tablet{
+            text-align: center;
+        }
+        @include desktop{
+            text-align: center;
     }
+}
     &__menu{
         padding-left: 0;
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        @include desktop{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 40px;
+            padding-left: 40px;
+        }
         li{
             list-style: none;
             padding-bottom: 7px;

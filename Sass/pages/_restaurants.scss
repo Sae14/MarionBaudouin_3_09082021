@@ -1,12 +1,28 @@
 .restaurants-container{
     background-color: $color-background;
     padding: 20px 15px 40px 15px;
+    .restaurant-cards-container{
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        @include desktop{
+            display: flex;
+            justify-content: space-between;
+        }
     .restaurant-card{
         overflow: hidden;
         margin-bottom: 20px;
         border-radius: 15px;
         @include block-shadow;  
         background-color: white;
+        @include tablet{
+            width: 48%;
+        }
+        @include desktop{
+            width: 23%;
+        }
         &__img{
             position: relative;
             img{
@@ -41,4 +57,5 @@
         margin-top: 15px;
     }
     }
+}
 }
