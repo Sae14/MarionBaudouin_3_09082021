@@ -25,14 +25,14 @@ body{
   z-index: 2;
   visibility: hidden;
   background-color: white;
-  animation: background-loader 4300ms both ease-out;
+  animation: background-loader 3000ms both ease-out;
   & div {
     display: inline-block;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background: linear-gradient($color-secondary, $color-primary);
-    animation: sk-bouncedelay 1.4s;
+    animation: sk-bouncedelay 1s;
     animation-iteration-count: 3;
     visibility: hidden;
   }
