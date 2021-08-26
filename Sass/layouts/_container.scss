@@ -25,9 +25,6 @@
 
 .restaurant{
     &__part1{
-        @include tablet{
-            margin-right: 10px;
-        }
         animation: menu-appear ease-in-out 1500ms both;
     }
 
@@ -74,7 +71,7 @@
         }
         h1{
             font-family: $font-secondary;
-            font-size: 27px;
+            font-size: 26px;
             font-weight: normal;
             padding-left: 5px;
             @include desktop{
@@ -86,7 +83,7 @@
         }
     }
     &__heart{
-        margin-right: 35px;
+        margin-right: 10px;
     }
 }
 
@@ -98,7 +95,7 @@
     }
     @include desktop{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
@@ -106,6 +103,14 @@
     padding-bottom: 30px;
     @include tablet{
         padding-bottom: 15px;
+        margin-right: 15px;
+        margin-left: 15px;
+        width: 380px;
+    }
+    @include desktop{
+        margin-right: 15px;
+        margin-left: 15px;
+        width: 420px;
     }
     h2{
         font-size: 18px;
@@ -133,18 +138,19 @@
                 margin-right: 0px;
                 i{
                     transform: rotate(360deg);
-                    animation: slide-check 750ms forwards;
+                    animation: slide-check 650ms 100ms forwards;
                 }
             }
         }
     }
     &__dish-desc{
         width: 290px;
-        display: flex;
-        flex-direction: column;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        @include tablet{
+            width: 330px;
+        }
         @include desktop{
             width: 370px;
         }
@@ -168,7 +174,7 @@
     &__price{
         margin-bottom: 0;
         line-height: 60px;
-        padding-right: 5px;
+        padding-right: 10px;
     }
     &__check{
         background-color: $color-tertiary;
