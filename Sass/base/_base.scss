@@ -25,7 +25,7 @@ body{
   z-index: 2;
   visibility: hidden;
   background-color: white;
-  animation: background-loader 3000ms both ease-out;
+  animation: background-loader 3s ease-in-out;
   & div {
     display: inline-block;
     width: 18px;
@@ -69,11 +69,11 @@ body{
 @keyframes background-loader {
     0% {
         opacity: 1;
-        visibility: visible
+        visibility: visible;
     }
     80% {
         opacity: 1;
-        visibility: visible
+        visibility: visible;
     }
     100% {
         opacity: 0;

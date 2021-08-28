@@ -25,15 +25,15 @@
 
 .restaurant{
     &__part1{
-        animation: menu-appear ease-in-out 1500ms both;
+        animation: menu-appear ease-in-out 1500ms backwards;
     }
 
     &__part2{
-        animation: menu-appear ease-in-out 1500ms 1s both;
+        animation: menu-appear ease-in-out 1500ms 1s backwards;
     }
 
     &__part3{
-        animation: menu-appear ease-in-out 1500ms 2s both;
+        animation: menu-appear ease-in-out 1500ms 2s backwards;
     }
 }
 
@@ -137,8 +137,7 @@
             .menu__check{
                 margin-right: 0px;
                 i{
-                    transform: rotate(360deg);
-                    animation: slide-check 650ms 100ms forwards;
+                    animation: slide-check 550ms 180ms ease-out;
                 }
             }
         }

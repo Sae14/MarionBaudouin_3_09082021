@@ -49,14 +49,14 @@
             background-color: rgb(245, 237, 255);
             opacity: 0;
             z-index: -1;
-            transition: opacity 400ms;
+            transition: opacity 400ms ease-in-out;
         }
     }
     &__icon{
         padding-left: 8px;
         padding-right: 20px;
         color: grey;
-        transition: all 400ms;
+        transition: all 400ms ease-in-out;
     }
     &__number{
         background-color: $color-primary;
